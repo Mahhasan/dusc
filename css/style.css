@@ -4,42 +4,230 @@ body, html {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.first-color{
-  color: #ffbc42;
+.color-1 {
+  color: #883B8E;
 }
-.second-color {
-  color: #2e3094;
+.color-2 {
+  color: #214497;
 }
-.first-bg {
-  background-color: #ffbc42;
+.color-3 {
+  color: #60B657;
 }
-.second-bg {
-  background-color: #2e3094;
+.color-4 {
+  color: #FFBC42;
 }
-.third-bg {
-  background-color: #25ab5c;
+.color-5 {
+  color: #2D2D2D;
+}
+.bg-1 {
+  background-color: #883B8E;
+}
+.bg-2 {
+  background-color: #214497;
+}
+.bg-3 {
+  background-color: #60B657;
+}
+.bg-4 {
+  background-color: #FFBC42;
+}
+.bg-5 {
+  background-color: #2D2D2D;
 }
 .no-padding {
   padding: 0px;
 }
 .section-header-wrapper {
-  padding-bottom: 20px;
+
 }
-.section-header {
-  font-size: 35px;
-  line-height: 60px;
-  font-weight: 700;
-  color: #333333;
+.section-title {
+
+}
+.section-sub-title {
+
+}
+.border-button {
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 13px 24px;
+  color: #883B8E;
+  border: 1px solid #883B8E;
+  display: inline-block;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+  transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  .border-button:hover {
+    color: #883B8E;
+    border: 1px solid #883B8E;
+  }
+/*CSS for navigation Section*/
+.navbar{
+  /* height: 85px; */
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #ffffff;
+  border: 1px solid #E1E1E1;
+}
+.navbar .navbar-brand img {
+  max-width: 56px;
+  max-height: 51px;
+}
+.navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2D2D2D;
+  line-height: 25px;
+  font-family: "Poppins";
+  transition: color 0.3s ease-in-out;
+  padding-right: 20px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+.nav-link .grid2 { 
+  width: 33px;
+  height: 33px;
+  /* margin-right: -26px;
+  margin-left: -3px; */
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #883B8E;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #883B8E;
+}
+
+
+/*CSS for Banner Section*/
+.banner-section {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.banner-section img { /* For banner background image */
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 226px;
+}
+.gradient-overlay { /* For banner gradient overlay */
+  opacity: 0.561;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00123E;
+}
+.banner-section .banner-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.shape-1 {
+  background-image: url('../img/shape-1.png'); /* shape image 1 */
+  background-repeat: no-repeat;
+  background-position: 549px 107px;
+}
+.shape-2 {
+  background-image: url('../img/shape-2.png'); /* shape image 2 */
+  background-repeat: no-repeat;
+  background-position: 197px 159px;
+}
+.banner-section .banner-caption h4 {
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFBC42;
+  font-weight: 500;
+  margin: 0 auto;
   font-family: "Poppins";
 }
-.sub-header {
+.banner-section .banner-caption h1 {
+  font-size: 50px;
+  line-height: 69px;
+  color: #FFFFFF;
+  font-weight: 900;
+  margin: 0 auto;
+  padding-top: 23px;
+  padding-bottom: 34px;
+  font-family: "Source Serif Pro";
+}
+.banner-section .banner-caption h5 {
+  max-width: 535px;
+  text-align: center;
   font-size: 16px;
-  line-height: 24px;
-  color: #ffbc42;
+  line-height: 25px;
+  color: #CFCFCF;
   font-weight: 400;
   font-family: "Poppins";
-  padding-bottom: 25px;
+  margin: 0 auto; /* Center the text horizontally */
 }
+.banner-button {
+  padding-top: 36px;
+  margin: 0 auto;
+}
+.banner-section .banner-button .banner-block-button {
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 13px 24px;
+  color: #2D2D2D;
+  border: 1px solid #FFBC42;
+  background-color: #FFBC42;
+  display: inline-block;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+  margin-right: 20px;
+  transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.banner-section .banner-button .banner-block-button:hover {
+  color: #2D2D2D;
+  border: 1px solid #FFBC42;
+}
+.banner-section .banner-button .banner-border-button {
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 13px 24px;
+  color: #FFBC42;
+  border: 1px solid #FFBC42;
+  display: inline-block;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+  /* margin-left: 10px; */
+  transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+.banner-section .banner-button .banner-border-button:hover {
+  color: #FFBC42;
+  border: 1px solid #FFBC42;
+}
+/*CSS for about section */
+.about-section .about-image img {
+  max-width: 530px;
+  max-height: 558px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .block-button {
   border-radius: 2px;
   color: #ffffff;
@@ -61,148 +249,26 @@ body, html {
 .block-button:hover{
   color: #ffbc42;
 }
-.border-button {
-  border-radius: 2px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  margin-top: 50px;
-  outline: 0;
-  display: inline-block;
-  font-size: 16px;
-  line-height: 14px;
-  text-align: center;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 18px 28px;
-  text-decoration: none;
-  font-family: "Poppins";
-  transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-.border-button:hover {
-  border: 1px solid #25ab5c;
-  color: #25ab5c;
-}
+
 .img-auto {
   height: auto;
   width: 100%;
-}
-/*CSS for navigation Section*/
-.navbar-brand img {
-  max-width: 44px;
-  max-height: 49px;
-}
-.navbar-light .navbar-nav .nav-link {
-  font-size: 16px;
-  color: #333333;
-  font-weight: 400;
-  padding-right: 26px;
-  padding-left: 26px;
-  font-family: "Poppins";
-  transition: color 0.3s ease-in-out;
-}
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #ffbc42;
-}
-.navbar-light .navbar-nav .nav-link.active {
-  color: #ffbc42;
-}
-.nav-link .search-icon { /*For searchbar*/
-  width: 20.45px;
-  height: 20.45px;
-  margin-right: 1px;
-  margin-left: 1px;
-}
-.nav-link .grid2 { 
-  width: 29px;
-  height: 29px;
-  margin-right: -26px;
-  margin-left: -3px;
-}
-/*CSS for Banner Section*/
-.banner-section {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-.banner-section img { /*For banner background image*/
-  display: block;
-  width: 100%;
-  height: auto;
-  min-height: 226px;
-}
-.gradient-overlay { /*For banner gradient overlay*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(90deg, rgba(29,30,99,0.96) 0%, rgba(23,24,74,0) 100%);
-}
-.banner-section .banner-caption { /*For banner caption*/
-  position: absolute;
-  left: 88px;
-  padding: 20px;
-  margin: 0;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.banner-section .caption-small-one {
-  font-size: 16px;
-  line-height: 16px;
-  color: #ffffff;
-  font-weight: 400;
-  font-family: "Poppins";
-}
-.banner-section .caption-small-two {
-  opacity: 0.800;
-  font-size: 16px;
-  line-height: 28px;
-  color: #fafafa;
-  font-weight: 400;
-  font-family: "Poppins";
-  max-width: 442px;
-}
-.banner-section .caption-big {
-  margin-top: 30px;
-  margin-bottom: 26px;
-  font-size: 79px;
-  line-height: 90px;
-  color: #ffffff;
-  font-weight: 400;
-  font-family: "Fredericka the Great";
-  max-width: 587px;
-}
-.banner-section .banner-button {
-  margin-top: 50px;
-}
-.banner-section .banner-button .button {
-  padding: 16.5px 40px;
-  border-radius: 2px;
-  background-color: #ffbc42;
-  font-size: 16px;
-  line-height: 28px;
-  color: #232323;
-  font-weight: 400;
-  font-family: "Poppins";
-  transition: color 0.3s ease-in-out;
-}
-.banner-section .banner-button .button:hover {
-  color: #ffffff;
-}
+} */
+
+
 /*CSS for about section */
-.about-image-container {
+/* .about-image-container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.about-image-container img { /*For background image */
+.about-image-container img { For background image
   display: block;
   width: 100%;
   height: auto;
 }
-.about-overlay-image { /*For overlay image */
+.about-overlay-image { For overlay image
   position: absolute;
   top: 49%;
   right: 0;
@@ -233,7 +299,6 @@ body, html {
   margin-bottom: 0px
 }
 .about-hero-img {
-  /* opacity: 0.549; */
   width: 97px;
   height: 97px;
   border-radius: 20px;
@@ -243,9 +308,9 @@ body, html {
 .about-hero-img img{
   max-width: 61px;
   max-height: 61px;
-}
+} */
 /*CSS for Work section */
-.our-work {
+/* .our-work {
   padding: 100px 71px 0px 100px;
 }
 .program-padding {
@@ -272,9 +337,9 @@ body, html {
   line-height: 25px;
   color: #ffffff;
   font-weight: 400;
-}
+} */
 /*CSS for Event Section */
-.event-buttons {
+/* .event-buttons {
   margin-top: 50px;
 }
 .event-buttons .margin-right{
@@ -286,12 +351,12 @@ body, html {
   align-items: center;
   justify-content: flex-end;
 }
-.event-image-container img { /*background image */
+.event-image-container img { background image
   display: block;
   width: 100%;
   height: auto;
 }
-.event-overlay-image { /*For overlay image */
+.event-overlay-image { For overlay image
   position: absolute;
   top: 50%;
   left: 0;
@@ -336,9 +401,9 @@ body, html {
   color: #232323;
   font-weight: 500;
   font-family: "Poppins";
-}
+} */
 /*CSS for Partner Section */
-.partner-section {
+/* .partner-section {
   padding: 50px 100px 115px 100px;
 
 }
@@ -359,9 +424,9 @@ body, html {
   max-width: 117px;
   height: auto;
   padding-right: 5px;
-}
+} */
 /*CSS for volunteer banner */
-.volunteer-banner-section {
+/* .volunteer-banner-section {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -438,13 +503,12 @@ body, html {
   font-weight: 800;
   padding-bottom: 4%;
   font-family: "Poppins";
-}
+} */
 /*CSS for news Section */
-.news-background-image {
+/* .news-background-image {
   background-image: url('../img/bg_img_3.png');
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
   height: 100%;
   width: 100%;
 }
@@ -506,9 +570,9 @@ body, html {
 .news-section-button:hover {
   color: #ffbc42;
   border: 1px solid #ffbc42;
-}
+} */
 /*CSS for Footer Section */
-.footer-logo {
+/* .footer-logo {
   width: 197px;
   height: 160px;
 }
@@ -517,7 +581,7 @@ body, html {
   color: #ffffff;
   padding-left: 113px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* functions are used to create a flexible grid with a minimum column width of 250 pixels and a maximum column width of 1 fraction unit */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  functions are used to create a flexible grid with a minimum column width of 250 pixels and a maximum column width of 1 fraction unit
   gap: 79px;
   padding-bottom: 75px;
   padding-top: 100px;
@@ -597,4 +661,4 @@ body, html {
   line-height: 90px;
   margin: 0;
   font-family: "Poppins";
-}
+} */
