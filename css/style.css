@@ -37,6 +37,9 @@ body, html {
 .no-padding {
   padding: 0px;
 }
+.section-padding {
+  padding-top: 133px;
+}
 .section-header-wrapper {
 
 }
@@ -212,48 +215,19 @@ body, html {
 }
 /*CSS for about section */
 .about-section .about-image img {
-  max-width: 530px;
-  max-height: 558px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.block-button {
-  border-radius: 2px;
-  color: #ffffff;
-  border: 1px solid ;
-  outline: 0;
-  display: inline-block;
-  font-size: 16px;
-  line-height: 14px;
-  text-align: center;
-  cursor: pointer;
-  font-weight: 400;
-  text-decoration: none;
-  font-family: "Poppins";
-  border: none;
-  padding: 19px 28px;
-  margin-bottom: 25px;
-  transition: color 0.3s ease-in-out;
-}
-.block-button:hover{
-  color: #ffbc42;
-}
-
-.img-auto {
-  height: auto;
+  display: block;
   width: 100%;
-} */
+  height: auto;
+  min-height: 226px;
+  max-width: 530px;
+}
+
+
+
+
+
+
+
 
 
 /*CSS for about section */
