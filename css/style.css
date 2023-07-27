@@ -5,7 +5,7 @@ body, html {
   font-family: Arial, Helvetica, sans-serif;
 }
 h1, h2, h3, h4, h5, h6, p {
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
 }
 .color-1 {
   color: #883B8E;
@@ -44,12 +44,27 @@ h1, h2, h3, h4, h5, h6, p {
  padding-left: 0px;
  padding-right: 0px;
 } */
+.mt-12 {
+  margin-top: 12px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
 .pt-50 {
   padding-top: 50px;
 }
 .section-padding {
   padding-top: 100px;
   padding-bottom: 50px;
+}
+.section-header-wrapper {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-header-wrapper .section-header h2 {
+  margin-bottom: 0px;
 }
 .section-header h2 {
   font-size: 30px;
@@ -69,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Poppins";
   text-decoration: none;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 21px;
   text-align: center;
   transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
   }
@@ -87,7 +102,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Poppins";
   text-decoration: none;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 21px;
   text-align: center;
   transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
   }
@@ -213,7 +228,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Poppins";
   text-decoration: none;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 21px;
   text-align: center;
   margin-right: 24px;
   transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -232,7 +247,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Poppins";
   text-decoration: none;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 21px;
   text-align: center;
   margin: 0px;
   transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -304,353 +319,139 @@ h1, h2, h3, h4, h5, h6, p {
 }
 /*CSS for academic section */
 .academic-section .academic-content {
-
+  border-radius: 20px;
+  padding: 27px 32px 10px 37px;
+  background-color: #FFBC42;
 }
 .academic-section .academic-content h2 {
-  
+  font-size: 40px;
+  line-height: 52px;
+  color: #00123E;
+  font-weight: 700;
+  font-family: "Source Serif Pro";  
+  padding-bottom: 27px;
 }
 .academic-section .academic-content p {
-  
-}
-.academic-section .academic-item {
-  
-}
-.academic-section .academic-item {
-  
-}
-
-
-
-
-
-
-
-/*CSS for about section */
-/* .about-image-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.about-image-container img { For background image
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.about-overlay-image { For overlay image
-  position: absolute;
-  top: 49%;
-  right: 0;
-  transform: translateY(-50%);
-  max-width: 82%;
-  max-height: 100%;
-}
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.about-content {
-  padding-left: 110px;
-  width: auto;
-}
-.about-categorie {
-  padding: 15px 15px;
-}
-.about-sub-header {
-  font-size: 18px;
-  line-height: 30px;
-  color: #ffbc42;
-  font-weight: 500;
-  text-transform: uppercase;
+  width: 192px;
+  height: 332px;
+  font-size: 16px;
+  color: #00123E;
+  font-weight: 400;
   font-family: "Poppins";
-  margin-bottom: 0px
 }
-.about-hero-img {
-  width: 97px;
-  height: 97px;
+.academic-section .academic-item {
+  padding: 27px 16px 16px 28px;
   border-radius: 20px;
-  background-color: #ccf9ff;
-  padding: 17px;
+  background-color: #FEF2FF;
+  border: 1px dashed #883B8E;
+  
 }
-.about-hero-img img{
-  max-width: 61px;
-  max-height: 61px;
-} */
-/*CSS for Work section */
-/* .our-work {
-  padding: 100px 71px 0px 100px;
+.academic-section .academic-item img {
+  max-height: 87px;
+  max-width: 87px;
 }
-.program-padding {
-  padding: 100px 80px 0px 67px;
-}
-.content-header {
-  font-size: 35px;
-  line-height: 40px;
-  color: #ffffff;
+.academic-section .academic-item h3 {
+  padding-top: 28px;
+  padding-bottom: 1px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #00123E;
   font-weight: 700;
+  font-family: "Source Serif Pro";
 }
-.our-work .content-header {
-  font-size: 35px;
-  line-height: 40px;
-  color: #ffffff;
-  font-weight: 700;
-  padding-bottom: 50px;
-  font-family: "Poppins";
-}
-.our-work p {
-  font-family: "Poppins";
-  color: #ffffff;
+.academic-section .academic-item p {
   font-size: 16px;
-  line-height: 25px;
-  color: #ffffff;
-  font-weight: 400;
-} */
-/*CSS for Event Section */
-/* .event-buttons {
-  margin-top: 50px;
-}
-.event-buttons .margin-right{
-  margin-right: 25px;
-}
-.event-image-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.event-image-container img { background image
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.event-overlay-image { For overlay image
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  max-width: 82%;
-  max-height: 100%;
-}
-.event-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.event-content {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  width: auto;
-}
-.event-description {
-  font-size: 16px;
-  line-height: 25px;
-  color: #333333;
+  line-height: 24px;
+  color: #2D2D2D;
   font-weight: 400;
   font-family: "Poppins";
-  padding-top: 25px;
-  padding-bottom: 35px;
 }
-.event-section-header {
-  font-size: 25px;
-  line-height: 35px;
-  color: #333333;
+.academic-section .academic-button {
+  padding-top: 63px;
+  padding-bottom: 62px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #883B8E;
+}
+.academic-section .academic-button h3{
+  font-size: 30px;
+  line-height: 41px;
+  color: #fef2ff;
   font-weight: 700;
-  font-family: "Poppins";
+  padding-bottom: 27px;
+  font-family: "Source Serif Pro";
 }
-.event-shedule {
-  display: flex;
-  justify-content: space-between;
+.academic-section .academic-button .border-button {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
-.event-shedule p {
-  font-size: 16px;
+.academic-section .academic-button .border-button:hover {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+/*CSS for Facilities section */
+.our-facilities .facilities-content {
+  padding: 52px 37px;
+  border-radius: 20px;
+  background-color: #214497;
+}
+.our-facilities .facilities-content h2 {
+  font-size: 40px;
+  line-height: 60.57px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: "Source Serif Pro";
+}
+.our-facilities .facilities-item {
+  align-items: center;
+  margin-bottom: 20px;
+}
+.our-facilities .facilities-item .facilities-hero-bg {
+  width: 73px;
+  height: 73px;
+  padding: 18px;
+  border-radius: 13px;
+  margin-right: 23px;
+  background-color: #FEF2FF;
+}
+.our-facilities .facilities-hero-bg .facilities-item img {
+  max-width: 37px;
+  max-height: 37px;
+}
+.our-facilities .facilities-item h5 {
+  margin-bottom: 0px;
+  font-size: 20px;
   line-height: 28px;
-  color: #232323;
+  color: #2D2D2D;
   font-weight: 500;
   font-family: "Poppins";
-} */
-/*CSS for Partner Section */
-/* .partner-section {
-  padding: 50px 100px 115px 100px;
+}
+/* Css for Campus Life Sections */
+.campus-activity .section-header-wrapper {
+  padding-bottom: 59px;
+}
 
-}
-.partner-section .section-header{
-  padding-bottom: 30px;
-}
-.partner-logo-container .col-md-2 {
-  width: auto;
-}
-.partner-logo-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 100%;
-}
-.partner-logo {
-  margin-bottom: 20px;
-  max-width: 117px;
-  height: auto;
-  padding-right: 5px;
-} */
-/*CSS for volunteer banner */
-/* .volunteer-banner-section {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-.volunteer-banner-section img {
-  display: block;
-  width: 100%;
-  min-height: 205px;
-  height: auto;
-}
-.volunteer-gradient-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.678;
-  background-color: #05064d;
-}
-.volunteer-banner-caption {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  margin: 0 auto;
-}
-.caption-small-one {
-  font-size: 16px;
-  line-height: 14px;
-  color: #ffffff;
-  font-weight: 400;
-  font-family: "Poppins";
-  margin-top: 1%;
-}
-.volunteer-banner-caption h2{
-  font-size: 79px;
-  line-height: 90px;
-  color: #ffffff;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 3%;
-  margin-bottom: 5%;
-  font-family: "Fredericka the Great";
-}
-.volunteer-block-button {
-  border-radius: 2px;
-  color: #ffffff;
-  outline: 0;
-  display: inline-block;
-  font-size: 16px;
-  line-height: 14px;
-  text-align: center;
-  cursor: pointer;
-  font-weight: 400;
-  text-decoration: none;
-  font-family: "Poppins";
-  border: none;
-  padding: 19px 28px;
-  margin-bottom: 2.5%;
-  transition: color 0.3s ease-in-out;
-}
-.volunteer-block-button:hover {
-  color: #232323;
-}
-.volunteer {
-  padding: 107px 15px 57px 100px;
-}
-.volunteer-text {
-  font-size: 40px;
-  line-height: 65px;
-  color: #333333;
-  font-weight: 800;
-  padding-bottom: 4%;
-  font-family: "Poppins";
-} */
-/*CSS for news Section */
-/* .news-background-image {
-  background-image: url('../img/bg_img_3.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.news-container {
-  padding: 25px 15px 98px 15px;
-}
-.news-section .news-container .card {
-  margin-bottom: 30px;
-  border-radius: 2px;
-  padding: 12px;
-  filter: drop-shadow(0 0 6.5px rgba(0,0,0,0.1));
-  border: none;
-}
-.news-section .news-container .card .card-body p {
-  font-size: 18px;
-  line-height: 30px;
-  color: #333333;
-  font-weight: 600;
-  font-family: "Poppins";
-  text-align: center;
-}
-.news-section .news-container .card .card-body .learn-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #333333;
-  text-decoration: none;
-}
-.news-section .news-container .card .card-body .learn-more i {
-  font-size: 29px;
-  color: #ffbc42;
-  margin-left: 10px;
-}
-.news-section-header {
-  display: flex;
-  justify-content: space-between;
-}
-.news-section-button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.news-section-button {
-  border-radius: 2px;
-  color: #2e3094;
-  border: 1px solid #2e3094;
-  font-size: 16px;
-  line-height: 14px;
-  font-weight: 400;
-  padding: 18px 28px;
-  display: inline-block;
-  text-align: center;
-  cursor: pointer;
-  outline: 0;
-  text-decoration: none;
-  font-family: "Poppins";
-  transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.news-section-button:hover {
-  color: #ffbc42;
-  border: 1px solid #ffbc42;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*CSS for Footer Section */
-/* .footer-logo {
-  width: 197px;
-  height: 160px;
-}
 .footer {
   background-color: #232323;
   color: #ffffff;
   padding-left: 113px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  functions are used to create a flexible grid with a minimum column width of 250 pixels and a maximum column width of 1 fraction unit
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* functions are used to create a flexible grid with a minimum column width of 250 pixels and a maximum column width of 1 fraction unit */
   gap: 79px;
   padding-bottom: 75px;
   padding-top: 100px;
@@ -720,14 +521,22 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .footer-bottom {
   width: 100%;
-  height: 90px;
-  background-color: #ffbc42;
-  color: #333333;
-  text-align: center;
-  bottom: 0;
+  height: 83px;
+  background-color: #2D2D2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Additional CSS for centering the content */
+.footer-bottom .center-wrapper {
+  display: flex;
+  align-items: center;
 }
 .footer-bottom p {
-  line-height: 90px;
-  margin: 0;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 0px;
   font-family: "Poppins";
-} */
+}
