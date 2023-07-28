@@ -4,9 +4,6 @@ body, html {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-h1, h2, h3, h4, h5, h6, p {
-  /* margin-bottom: 0px; */
-}
 .color-1 {
   color: #883B8E;
 }
@@ -40,10 +37,6 @@ h1, h2, h3, h4, h5, h6, p {
 .no-padding {
   padding: 0px;
 }
-/* .col-lg-3, .col-lg-4, .col-lg-6 {
- padding-left: 0px;
- padding-right: 0px;
-} */
 .mt-12 {
   margin-top: 12px;
 }
@@ -78,37 +71,34 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 8px;
   padding: 13px 24px;
   color: #FFFFFF;
-  border: 1px solid #883B8E;
   background-color: #883B8E;
   display: inline-block;
   font-family: "Poppins";
   text-decoration: none;
   font-weight: 500;
-  line-height: 21px;
+  line-height: 23px;
   text-align: center;
   transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
   }
 .block-button:hover {
   color: #FFFFFF;
-  border: 1px solid #883B8E;
 }
 .border-button {
   font-size: 16px;
   border-radius: 8px;
   padding: 13px 24px;
   color: #883B8E;
-  border: 1px solid #883B8E;
   display: inline-block;
   font-family: "Poppins";
   text-decoration: none;
   font-weight: 500;
   line-height: 21px;
   text-align: center;
+  border: 1px solid #883B8E;
   transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
   }
 .border-button:hover {
   color: #883B8E;
-  border: 1px solid #883B8E;
 }
 /*CSS for navigation Section*/
 .navbar{
@@ -126,12 +116,18 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 16px;
   font-weight: 500;
   color: #2D2D2D;
-  line-height: 25px;
+  line-height: 23px;
   font-family: "Poppins";
   transition: color 0.3s ease-in-out;
   padding-right: 20px;
   padding-left: 20px;
-  vertical-align: middle;
+}
+.navbar .nav-button .border-button {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.navbar .nav-grid {
+  margin-left: 20px;
 }
 .nav-link .grid2 { 
   width: 33px;
@@ -157,7 +153,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
   width: 100%;
   height: auto;
-  min-height: 226px;
+  min-height: 286px;
 }
 .gradient-overlay { /* For banner gradient overlay */
   opacity: 0.561;
@@ -174,20 +170,21 @@ h1, h2, h3, h4, h5, h6, p {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  max-width: 664px;
 }
 .shape-1 {
   background-image: url('../img/shape-1.png'); /* shape image 1 */
   background-repeat: no-repeat;
-  background-position: 549px 107px;
+  background-position: 100% 31%;
 }
 .shape-2 {
   background-image: url('../img/shape-2.png'); /* shape image 2 */
   background-repeat: no-repeat;
-  background-position: 195px 159px;
+  background-position: 35% 90%;
 }
 .banner-section .banner-caption h4 {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 23px;
   color: #FFBC42;
   font-weight: 500;
   margin: 0 auto;
@@ -200,7 +197,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 900;
   margin: 0 auto;
   padding-top: 26px;
-  padding-bottom: 38px;
+  padding-bottom: 40px;
   font-family: "Source Serif Pro";
 }
 .banner-section .banner-caption h5 {
@@ -213,8 +210,8 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Poppins";
   margin: 0 auto; /* Center the text horizontally */
 }
-.banner-button {
-  padding-top: 28px;
+.banner-caption .banner-button {
+  padding-top: 40px;
   margin: 0 auto;
 }
 .banner-section .banner-button .banner-block-button {
@@ -222,27 +219,24 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 8px;
   padding: 13px 24px;
   color: #2D2D2D;
-  border: 1px solid #FFBC42;
   background-color: #FFBC42;
   display: inline-block;
   font-family: "Poppins";
   text-decoration: none;
   font-weight: 500;
-  line-height: 21px;
+  line-height: 23px;
   text-align: center;
   margin-right: 24px;
   transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .banner-section .banner-button .banner-block-button:hover {
   color: #2D2D2D;
-  border: 1px solid #FFBC42;
 }
 .banner-section .banner-button .banner-border-button {
   font-size: 16px;
   border-radius: 8px;
   padding: 13px 24px;
   color: #FFBC42;
-  border: 1px solid #FFBC42;
   display: inline-block;
   font-family: "Poppins";
   text-decoration: none;
@@ -250,19 +244,22 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 21px;
   text-align: center;
   margin: 0px;
+  border: 1px solid #FFBC42;
   transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
   }
 .banner-section .banner-button .banner-border-button:hover {
   color: #FFBC42;
-  border: 1px solid #FFBC42;
 }
 /*CSS for about section */
+.about-container .about-main-content .section-header h2 {
+  margin-bottom: 0px;
+}
 .about-section .about-image img {
   display: block;
+  max-width: 530px;
   width: 100%;
   height: auto;
-  min-height: 226px;
-  max-width: 530px;
+  min-height: 286px;
 }
 .about-section .about-content {
   padding-top: 50px;
@@ -284,32 +281,35 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .about-content .about-item h5 {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 28px;
   color: #00123e;
   font-weight: 700;
+  margin-bottom: 0px;
   font-family: "Source Serif Pro";
 }
 .about-content p {
   max-width: 530px;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 29px;
   color: #2D2D2D;
   padding-top: 30px;
   font-weight: 400;
+  margin-bottom: 0px;
   font-family: "Poppins";
 }
 .about-section .about-container {
-  padding-left: 40px;
+  float: right;
 }
 .about-container .about-description p{
   max-width: 531px;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 29px;
   color: #2D2D2D;
   font-weight: 400;
   font-family: "Poppins";
   padding-top: 45px;
   padding-bottom: 40px;
+  margin-bottom: 0px;
 }
 .about-container .about-main-content {
   padding-bottom: 72px;
@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6, p {
 /*CSS for academic section */
 .academic-section .academic-content {
   border-radius: 20px;
-  padding: 27px 32px 10px 37px;
+  padding: 27px 32px 17px 37px;
   background-color: #FFBC42;
 }
 .academic-section .academic-content h2 {
@@ -332,11 +332,10 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 27px;
 }
 .academic-section .academic-content p {
-  width: 192px;
-  height: 332px;
   font-size: 16px;
   color: #00123E;
   font-weight: 400;
+  line-height: 25px;
   font-family: "Poppins";
 }
 .academic-section .academic-item {
@@ -387,7 +386,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .academic-section .academic-button .border-button:hover {
   color: #FFFFFF;
-  border: 1px solid #FFFFFF;
 }
 /*CSS for Facilities section */
 .our-facilities .facilities-content {
@@ -426,20 +424,27 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 500;
   font-family: "Poppins";
 }
+
+
 /* Css for Campus Life Sections */
 .campus-activity .section-header-wrapper {
   padding-bottom: 59px;
 }
 
 
-
-
-
-
-
-
-
-
+/* Css for Affiliations Sections */
+.affiliations .affiliations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.affiliations .affiliations-container .affiliations-logo {
+  margin-top: 15px;
+}
+.affiliations .affiliations-container .affiliations-logo img {
+  max-width: 207px;
+  height: auto;
+}
 
 
 
@@ -447,17 +452,20 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*CSS for Footer Section */
 .footer {
-  background-color: #232323;
+  background-color: #fef2ff;;
   color: #ffffff;
   padding-left: 113px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* functions are used to create a flexible grid with a minimum column width of 250 pixels and a maximum column width of 1 fraction unit */
-  gap: 79px;
-  padding-bottom: 75px;
-  padding-top: 100px;
+  gap: 50.5px;
+  padding-bottom: 101px;
+  padding-top: 105px;
+}
+.footer > .footer-grid:first-child {
+  margin-right: 50.5px;
 }
 .footer-grid .important-link1 {
-  padding-left: 49px;
+  padding-left: 50.5px;
 }
 .social-contact {
   padding-bottom: 15px;
@@ -519,6 +527,12 @@ h1, h2, h3, h4, h5, h6, p {
 .footer-grid ul li a:hover{
   color: #ffbc42;
 }
+
+
+
+
+
+/* footer bottom */
 .footer-bottom {
   width: 100%;
   height: 83px;
@@ -527,8 +541,7 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   justify-content: center;
 }
-/* Additional CSS for centering the content */
-.footer-bottom .center-wrapper {
+.footer-bottom .center-wrapper { /*CSS for centering the content */
   display: flex;
   align-items: center;
 }

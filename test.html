@@ -4,22 +4,138 @@
   <title>Source Serif Pro Font Example</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:wght@400;700,900|Poppins:wght@400;500;600;700;800;900&display=swap">  
   <style>
-    .dashed-border {
-  width: 200px;
-  height: 100px;
-  border: 1px solid transparent;
-  background-image: linear-gradient(90deg, #883B8E 10px, transparent 10px);
+    .affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+.affiliations-container {
+  /* margin-top: 15px; */
+  max-width: 530px;
 }
-
+/*CSS for about section */
+.about-container .about-main-content .section-header h2 {
+  margin-bottom: 0px;
+}
+.about-section .about-image img {
+  display: block;
+  /* width: 100%; */
+  height: auto;
+  min-height: 286px;
+  max-width: 530px;
+}
+.about-section .about-content {
+  padding-top: 50px;
+}
+.about-content .about-item {
+  align-items: center;
+}
+.about-content .about-item .about-hero-bg {
+  width: 73px;
+  height: 73px;
+  border-radius: 13px;
+  padding: 18px;
+  margin-right: 24px;
+  background-color: #FEF2FF;
+}
+.about-content .about-item img {
+  max-width: 37px;
+  max-height: 37px;
+}
+.about-content .about-item h5 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #00123e;
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-family: "Source Serif Pro";
+}
+.about-content p {
+  max-width: 530px;
+  font-size: 16px;
+  line-height: 29px;
+  color: #2D2D2D;
+  padding-top: 30px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  font-family: "Poppins";
+}
+.about-section .about-container {
+  /* padding-left: 40px; */
+}
+.about-container .about-description p{
+  max-width: 531px;
+  font-size: 16px;
+  line-height: 29px;
+  color: #2D2D2D;
+  font-weight: 400;
+  font-family: "Poppins";
+  padding-top: 45px;
+  padding-bottom: 40px;
+  margin-bottom: 0px;
+}
+.about-container .about-main-content {
+  padding-bottom: 72px;
+}
+.about-container .about-button .block-button{
+  margin-right: 24px;
+}
   </style>
 </head>
 <body>
-  <div class="dashed-border">
-    kjisfjgisfkvnkl
-    lsdfiugisfgv
-    sflkvgpoisfg
-  </div>
-
+  <section class="about-section section-padding">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="affiliations">
+                <div class="affiliations-container">
+                    <div class="about-image">
+                        <img class="" src="img/about-1.png" alt="about-image">
+                    </div>
+                    <div class="about-content">
+                        <div class="about-item d-flex text-center">
+                            <div class="about-hero-bg">
+                                <img src="img/bank.png" alt="Image">
+                            </div>
+                            <h5>Certified Institute</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore .</p>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-item d-flex text-center">
+                            <div class="about-hero-bg">
+                                <img src="img/teacher.png" alt="Image">
+                            </div>
+                            <h5>Qualified Teachers</h5>
+                        </div>
+                        <p style="line-height: 28.5px;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                    </div>
+                </div>
+                <div class="affiliations-container">
+                    <div class="about-container">
+                        <div class="about-main-content">
+                            <div class="section-header">
+                                <h2>Why Students Choose Us</h2>
+                            </div>
+                            <div class="about-description">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                </p>
+                            </div>
+                            <div class="about-button">
+                                <a class="block-button" href="#">Admission</a>
+                                <a class="border-button" href="#">About Us</a>
+                            </div>    
+                        </div>
+                        <div class="about-image">
+                            <img class="" src="img/about-2.png" alt="about-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
