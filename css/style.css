@@ -452,20 +452,18 @@ body, html {
 
 /*CSS for Footer Section */
 .footer {
-  background-color: #fef2ff;;
+  /* background-color: #fef2ff; */
+  background-color: #2D2D2D;
   color: #ffffff;
-  padding-left: 113px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* functions are used to create a flexible grid with a minimum column width of 250 pixels and a maximum column width of 1 fraction unit */
-  gap: 50.5px;
+  /* padding-left: 113px; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  */
+  /* gap: 8px; */
   padding-bottom: 101px;
   padding-top: 105px;
 }
-.footer > .footer-grid:first-child {
-  margin-right: 50.5px;
-}
 .footer-grid .important-link1 {
-  padding-left: 50.5px;
+  /* padding-left: 50.5px; */
 }
 .social-contact {
   padding-bottom: 15px;
