@@ -37,11 +37,11 @@ body, html {
 .no-padding {
   padding: 0px;
 }
-.mt-12 {
-  margin-top: 12px;
+.pr-0 {
+ padding-right: 0px;
 }
-.mb-12 {
-  margin-bottom: 12px;
+.pl-0 {
+  padding-left: 0px;
 }
 .pt-50 {
   padding-top: 50px;
@@ -301,9 +301,6 @@ body, html {
   margin-bottom: 0px;
   font-family: "Poppins";
 }
-.about-section .about-container {
-  float: right;
-}
 .about-container .about-description p{
   max-width: 531px;
   font-size: 16px;
@@ -432,14 +429,37 @@ body, html {
   width: 100%;
   height: auto;
 }
-
-
 /* Css for Campus Life Sections */
 .campus-activity .section-header-wrapper {
-  padding-bottom: 59px;
+  margin-bottom: 9px;
 }
-
-
+.campus-activity .activity-item {
+  border-radius: 30px;
+  background-color: #FeF2FF;
+  max-width: 530px;
+}
+.campus-activity .activity-item img {
+  /* height: 100%; */
+  width: 100%;
+  padding: 10px 9px 30px 11px;
+  border-radius: 30px 30px 0px 0px;
+  display: block;
+  height: auto;
+}
+.campus-activity .activity-item .activity-content p {
+  font-size: 20px;
+  line-height: 38px;
+  color: #2D2D2D;
+  font-weight: 500;
+  padding-bottom: 28px;
+  padding-left: 36px;
+  padding-right: 36px;
+  margin-bottom: 0px;
+  font-family: "Poppins";
+}
+.campus-activity .swiper-button-next, .campus-activity .swiper-button-prev {
+  width: calc(var(--swiper-navigation-size)/ 44 * 66);
+}
 /* Css for Affiliations Sections */
 .affiliations .affiliations-container {
   display: flex;
@@ -453,83 +473,126 @@ body, html {
   max-width: 207px;
   height: auto;
 }
+/* CSS for feedback section */
+.feedback {
+  margin-bottom: 135px;
+}
+.feedback .section-header-wrapper {
+  margin-bottom: 14px;
+}
+.feedback .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback .parents-feedback {
+  background-color: #FEF2FF;
+  max-width: 849px;
+  border-radius: 20px;
+}
+.feedback .parents-feedback img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* max-width: 267px; */
+  object-fit: cover;
+}
+.feedback .parents-feedback .feedback-details {
+  padding-left: 3px;
+  padding-right: 25px;
+}
+.feedback .parents-feedback .feedback-details .feedback-content p {
+  font-size: 16px;
+  line-height: 31px;
+  color: #2D2D2D;
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-family: "Poppins";
+}
+.feedback .parents-feedback .feedback-details .parents-details h6 {
+  font-size: 16px;
+  line-height: 24.5px;
+  color: #2D2D2D;
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-family: "Source Serif Pro";
+}
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
+  content: none;
+}
+.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+  content: none;
+}
+.feedback .swiper-button-next, .feedback .swiper-button-prev {
+  width: calc(var(--swiper-navigation-size)/ 44 * 51);
+}
 /*CSS for Footer Section */
 .footer {
   background-color: #FEF2FF;
+  padding-top: 61px;
   padding-bottom: 101px;
-  padding-top: 105px;
 }
-.footer .footer-logo {
+.footer .footer-logo img {
   width: 100%;
   height: auto;
   max-width: 221px;
   max-height: 82px;
 }
-.social-contact {
-  padding-bottom: 15px;
+.footer .institute-contact {
+  margin-top: 44px;
 }
-.social-contact p {
-  color: #eaeaea;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Poppins";
+.footer .institute-contact .contact-item {
+  margin-top: 30px;
 }
-.social-contact h6 {
-  opacity: 0.612;
+.footer .institute-contact .contact-item h6 {
   font-size: 16px;
-  color: #ffffff;
+  line-height: 23px;
+  color: #597373;
   font-weight: 400;
+  margin-bottom: 0px;
   font-family: "Poppins";
 }
-.social-contact a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease-in-out;
-}
-.social-contact a:hover {
-  color: #ffbc42;
-}
-.footer-section-header {
-  font-size: 30px;
-  line-height: 60px;
-  color: #ffffff;
-  font-weight: 700;
+.footer .institute-contact .contact-item p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 0px;
   font-family: "Poppins";
-  margin-top: -30px;
-  margin-bottom: 50px;
 }
-.footer-grid h5 {
+.footer .institute-contact .contact-item .institute-address p {
+  line-height: 25px;
+}
+.footer .important-link {
+  margin-top: 44px;
+}
+.footer .important-link h5 {
   font-size: 20px;
-  margin-bottom: 48px;
-  color: #a6a6a6d4;
-  font-weight: 500;
-  font-family: "Poppins";
+  line-height: 28px;
+  color: #636363;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: "Source Serif Pro";
 }
-.footer-grid ul {
+.footer .important-link ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.footer-grid ul li {
-  margin-bottom: 25px;
-  margin-top: 25px;
+.footer .important-link ul li {
+  margin-top: 15px;
 }
-.footer-grid ul li a{
+.footer .important-link ul li a{
   text-decoration: none;
-  color: #eaeaea;
   font-size: 16px;
-  font-weight: 500;
+  line-height: 27px;
+  color: #000000;
+  font-weight: 400;
   font-family: "Poppins";
-  transition: color 0.3s ease-in-out;
 }
-.footer-grid ul li a:hover{
-  color: #ffbc42;
+.footer .important-link ul li a:hover{
+  color: #883B8E;
 }
-
-
-
-
-
 /* footer bottom */
 .footer-bottom {
   width: 100%;
