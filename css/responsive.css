@@ -1,49 +1,232 @@
-  /* CSS for responsive design */
-
-  @media (max-width: 319.98px) {
-    
+/* CSS for responsive design */
+@media (max-width: 479.98px) {
+  .section-header h2 {
+    font-size: 27px;
   }
-  @media (max-width: 333.98px) {
-   
+  .section-padding {
+    padding-top: 50px;
   }
-  @media (min-width: 334px) and (max-width: 767.98px) {
-   
+  /* For banner Section */
+  .banner-section .banner-caption {
+    left: 12%;
+    transform: translate(-7%, -50%);
   }
-  @media (max-width: 479.98px) {
-    
+  .banner-section .banner-caption h1 {
+    font-size: 27px;
+    line-height: 33px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 700;
   }
-  @media (max-width: 767.98px) {
-   
+  .banner-section .banner-caption h5 {
+    display: none;
   }
-  @media (max-width: 991.98px) {
-    /* .navbar {
-      height: 79px;
-    } */
+  .shape-1 {
+    background-image: none
   }
-  @media (min-width: 320px) and (max-width: 479.98px) {
-   
+  .shape-2 {
+    background-position: 35% 100%;
   }
-  @media (min-width: 480px) and (max-width: 575.98px) {
-    
+  .banner-caption .banner-button {
+    padding-top: 26px;
   }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-   
+  .banner-section .banner-button .banner-border-button {
+    padding: 13px 20px;
+    line-height: 15px;
   }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    
+  .banner-section .banner-button .banner-block-button {
+    padding: 13px 20px;
+    line-height: 17px;
+    margin-right: 16px;
   }
-  @media(max-width: 1199.98px) {
-    
+  /* For Academic Section */
+  .academic-section .col-6 {
+    width: 100%;
   }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-   
+  /* For Affiliation Section */
+  .affiliations .affiliations-container {
+    justify-content: center;
   }
-  @media (min-width: 1200px) {
-   
+  /* For Feedback Section */
+  .feedback {
+    margin-bottom: 85px;
   }
-  @media (min-width: 1240px) {
-   
+}
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
   }
-  @media (min-width: 1200px) and (max-width: 1360px) {
-   
+  /* For Academic Section */
+  .academic-section .academic-item h3, .academic-section .academic-button h3 {
+    font-size: 30px;
+    line-height: 41px;
   }
+  .academic-section .academic-button {
+    padding: 63px 35px 62px 34px;
+  }
+  /*CSS for Facilities section */
+  .our-facilities .facilities-content h2 {
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .our-facilities .facilities-item {
+    margin-bottom: 10px;
+  }
+  .our-facilities .facilities-item .facilities-hero-bg {
+    width: 67px;
+    height: 67px;
+    padding: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .flex-direction-md {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+  /* For Feedback section */
+  .feedback .parents-feedback {
+    max-width: 402px;
+  }
+  .feedback .parents-feedback .feedback-details {
+    padding: 24px;
+  }
+}
+@media (min-width: 480px) and (max-width: 575.98px) {
+    /* For banner Section */
+  .banner-section .banner-caption {
+    left: 34%;
+    transform: translate(-26%, -50%);
+  }
+  .banner-section .banner-caption h1 {
+    font-size: 26px;
+    line-height: 39px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .banner-section .banner-caption h5 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .shape-1 {
+    background-position: 100% 25%;
+  }
+  .shape-2 {
+    background-position: 35% 95%;
+  }
+  .banner-caption .banner-button {
+    padding-top: 26px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* For banner Section */
+  .banner-section .banner-caption {
+    left: 40%;
+    transform: translate(-35%, -50%);
+  }
+  .banner-section .banner-caption h1 {
+    font-size: 29px;
+    line-height: 39px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .banner-section .banner-caption h5 {
+    line-height: 21px;
+  }
+  .shape-1 {
+    background-position: 100% 25%;
+  }
+  .shape-2 {
+    background-position: 35% 95%;
+  }
+  .banner-caption .banner-button {
+    padding-top: 26px;
+  }
+  /* For Academic Section */
+  .academic-section .academic-item h3, .academic-section .academic-button h3 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .academic-section .academic-button {
+    padding: 63px 10px 62px 10px;
+  }
+  /*CSS for Facilities section */
+  .our-facilities .facilities-content h2 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .our-facilities .facilities-content {
+    padding: 26px 37px;
+  }
+  .our-facilities .facilities-item {
+    margin-bottom: 9px;
+  }
+  .our-facilities .facilities-item .facilities-hero-bg {
+    width: 61px;
+    height: 61px;
+    padding: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* For banner Section */
+  .banner-section .banner-caption {
+    left: 40%;
+    transform: translate(-35%, -50%);
+  }
+  .banner-section .banner-caption h1 {
+    font-size: 39px;
+    line-height: 50px;
+    padding-top: 18px;
+    padding-bottom: 26px;
+  }
+  .shape-1 {
+    background-position: 100% 30%;
+  }
+  .shape-2 {
+    background-position: 35% 95%;
+  }
+  .banner-caption .banner-button {
+    padding-top: 26px;
+  }
+  /* For Academic Section */
+  .academic-section .academic-item h3, .academic-section .academic-button h3 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* For banner Section */
+  .banner-section .banner-caption h1 {
+    font-size: 42px;
+    line-height: 56px;
+  }
+  .shape-1 {
+    background-position: 100% 30%;
+  }
+  /* For Academic Section */
+  .academic-section .academic-item h3, .academic-section .academic-button h3 {
+    font-size: 25px;
+  }
+  .academic-section .academic-content h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .academic-section .academic-content {
+    padding: 24px 12px 8px 24px;
+  }
+  /*CSS for Facilities section */
+  .our-facilities .facilities-content h2 {
+    font-size: 36px;
+    line-height: 49px;
+  }
+  .our-facilities .facilities-content {
+    padding: 25px 37px;
+  }
+  .our-facilities .facilities-item {
+    margin-bottom: 10px;
+  }
+  .our-facilities .facilities-item .facilities-hero-bg {
+    width: 67px;
+    height: 67px;
+    padding: 15px;
+  }
+}

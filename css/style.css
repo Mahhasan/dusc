@@ -341,10 +341,9 @@ body, html {
 }
 .academic-section .academic-item {
   padding: 27px 16px 16px 28px;
-  border-radius: 20px;
   background-color: #FEF2FF;
-  border: 1px dashed #883B8E;
-  
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23883B8EFF' stroke-width='1' stroke-dasharray='10%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 20px;  
 }
 .academic-section .academic-item img {
   max-height: 87px;
@@ -465,8 +464,6 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.affiliations .affiliations-container .affiliations-logo {
   margin-top: 15px;
 }
 .affiliations .affiliations-container .affiliations-logo img {
